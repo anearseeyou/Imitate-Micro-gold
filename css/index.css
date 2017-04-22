@@ -1,0 +1,700 @@
+/*
+    公共样式
+*/
+
+body {
+    font-family: "Helvetica Neue",
+    Helvetica,
+    Microsoft Yahei,
+    Hiragino Sans GB,
+    WenQuanYi Micro Hei,
+    sans-serif;
+}
+
+@font-face {
+    font-family: 'wjs';
+    src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.svg') format('svg'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+.icon {
+    font-family: wjs;
+    font-style: normal;
+}
+
+/*
+    增加BS中Btn的按钮样式
+*/
+
+.btn-register {
+    color: #FFFFFF;
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #DB3B43;
+    border-color: #DB3B43;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #E9232C;
+    border-color: #DB3B43;
+}
+
+.btn-register .badge {
+    color: #E9232C;
+    background-color: #FFFFFF;
+}
+
+/* S - 头部区域 --- */
+
+#header .top-info {
+    height: 40px;
+    line-height: 39px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#header .top-info .row > div + div {
+    border-left: 1px solid #e0e0e0;
+}
+
+#header .top-info .icon-phone::before {
+    content: "\e908";
+    font-size: 13px;
+}
+
+#header .top-info .icon-mobile::before {
+    content: "\e909";
+    font-size: 13px;
+}
+
+#header .top-info .login {
+    margin-left: 10px;
+}
+
+#header .top-info .ecode {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 20000;
+}
+
+#header .top-ecode > a:hover ~ .ecode {
+    display: block;
+}
+
+/* 头部导航 */
+
+#header .navbar-info {
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    margin-bottom: 0;
+}
+
+#header .navbar-info .icon-logo::before {
+    content: "\e920";
+    font-size: 50px;
+    line-height: 50px;
+    color: #E9232C;
+    vertical-align: middle;
+}
+
+#header .navbar-info .icon-name::before {
+    content: "\e93e";
+    font-size: 36px;
+    line-height: 50px;
+    color: #000;
+    vertical-align: middle;
+}
+
+#header .navbar-info .navbar-brand {
+    height: 70px;
+    padding: 10px 15px;
+}
+
+#header .navbar-info .navbar-nav > li > a {
+    height: 70px;
+    line-height: 40px;
+}
+
+.navbar-info .navbar-nav > .active > a,
+.navbar-info .navbar-nav a:hover,
+.navbar-info .navbar-nav a:focus {
+    color: #000;
+    background-color: transparent;
+    border-bottom: 2px solid #e9232c;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+}
+
+#header .navbar-info .navbar-toggle {
+    margin: 18px 0;
+}
+
+/* E - 头部区域 --- */
+
+/* S - 广告轮播 --- */
+
+#banner .carousel-inner > .item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner .carousel-inner .item img {
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    #banner .carousel-inner > .item {
+        height: 410px;
+    }
+}
+
+/* E - 广告轮播 --- */
+
+/* S - 平台特色 ---- */
+
+#microPlat {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#microPlat .container .row a {
+    color: #333;
+    text-decoration: none;
+}
+
+#microPlat .container .row a i {
+    display: block;
+    padding-top: 24px;
+}
+
+#microPlat .container .row h4 {
+    margin: 28px 0 5px 0;
+}
+
+#microPlat .container .row a:hover {
+    color: #e9232c;
+}
+
+#microPlat .container .icon-uniE907:before,
+#microPlat .container .icon-uniE903:before,
+#microPlat .container .icon-uniE901:before,
+#microPlat .container .icon-uniE900:before,
+#microPlat .container .icon-uniE904:before,
+#microPlat .container .icon-uniE902:before {
+    font-size: 35px;
+    padding-top: 20px;
+}
+
+#microPlat .container .icon-uniE907:before {
+    content: "\e907";
+}
+
+#microPlat .container .icon-uniE903:before {
+    content: "\e903";
+}
+
+#microPlat .container .icon-uniE901:before {
+    content: "\e901";
+}
+
+#microPlat .container .icon-uniE900:before {
+    content: "\e900";
+}
+
+#microPlat .container .icon-uniE904:before {
+    content: "\e904";
+}
+
+#microPlat .container .icon-uniE902:before {
+    content: "\e902";
+}
+
+/* E - 平台特色 ---- */
+
+/* S - 立即预约 ----- */
+
+#microOrder {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+#microOrder .container .row strong {
+    color: #e9232c;
+}
+
+#microOrder .container .row .order {
+    color: #e9232c;
+
+    border-bottom: 1px dashed #e9232c;
+}
+
+#microOrder .container .row a {
+    text-decoration: none;
+    color: #333;
+}
+
+.icon-uniE906::before {
+    font-size: 18px;
+    content: ' \e906';
+}
+
+.icon-uniE905::before {
+    font-size: 18px;
+    content: ' \e905';
+}
+
+/* E - 立即预约 ----- */
+
+/* S - 产品中心 ----- */
+
+#microProduct {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    overflow-x: scroll;
+}
+
+#microProduct .container .nav-tabs > .active > a {
+    border-bottom: 4px solid #e9232c;
+}
+
+#microProduct .container .nav-tabs a {
+    color: #333;
+    border: 0;
+    background: #f0f0f0;
+    font-size: 16px;
+}
+
+#microProduct .container ul li a:focus {
+    border-bottom: 4px solid #e9232c;
+}
+
+#microProduct .container .nav-tabs .more a {
+    border-bottom: 0;
+}
+
+#microProduct .panel-product {
+    box-shadow: 0 1px 1px #f0f0f0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#microProduct .panel-product .panel-heading {
+    float: right;
+    width: 120px;
+    height: 150px;
+    padding: 20px 0 35px;
+    text-align: center;
+    border-left: 1px dashed #fff;
+    position: relative;
+}
+
+#microProduct .tab-content .panel-product .cur strong,
+#microProduct .tab-content .panel-product .cur sub,
+#microProduct .tab-content .panel-product .cur span {
+    color: #fff;
+}
+
+#microProduct .panel-product .panel-heading::before,
+#microProduct .panel-product .panel-heading::after {
+    content: " ";
+    width: 14px;
+    height: 14px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 1px 1px #999 inset;
+}
+
+#microProduct .panel-product .panel-heading::before {
+    left: -7px;
+    top: -7px;
+}
+
+#microProduct .panel-product .panel-heading::after {
+    left: -7px;
+    bottom: -7px;
+}
+
+#microProduct .panel-product .panel-heading strong {
+    color: #e9232c;
+    font-size: 36px;
+}
+
+#microProduct .panel-product .panel-heading sub {
+    color: #e9232c;
+}
+
+#microProduct .panel-product .panel-heading span {
+    font-size: 12px;
+    color: #333;
+}
+
+#microProduct .panel-product .panel-body {
+    height: 150px;
+    margin-right: 120px;
+}
+
+#microProduct .panel-product .panel-body h5 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 15px;
+    color: #333;
+
+}
+
+#microProduct .panel-product .panel-body dt {
+    font-size: 10px;
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+#microProduct .panel-product .panel-body dd {
+    font-size: 16px;
+    margin-bottom: 5px;
+
+}
+
+#microProduct .current {
+    background-color: #e9232c;
+}
+
+#microProduct .current > .panel-body .row h5 {
+    color: #fff;
+}
+
+#microProduct .current > .panel-body .row dd {
+    color: #fff;
+}
+
+#microProduct .product-bar {
+    background-color: #fff;
+}
+
+#microProduct .product-bar1,
+#microProduct .product-bar2,
+#microProduct .product-bar3,
+#microProduct .product-bar4 {
+    background-color: #e0e0e0;
+}
+
+#microProduct .product-bar1::after,
+#microProduct .product-bar2::after,
+#microProduct .product-bar3::after,
+#microProduct .product-bar4::after {
+    font-family: wjs;
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+}
+
+#microProduct .product-bar1::after {
+    content: "\e925";
+}
+
+#microProduct .product-bar2::after {
+    content: "\e926";
+}
+
+#microProduct .product-bar3::after {
+    content: "\e927";
+}
+
+#microProduct .product-bar4::after {
+    content: "\e928";
+}
+
+#microProduct .product-bar .microLocal,
+#microProduct .product-bar1 .microLocal,
+#microProduct .product-bar2 .microLocal,
+#microProduct .product-bar3 .microLocal,
+#microProduct .product-bar4 .microLocal {
+    display: inline-block;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    color: #e9232c;
+    border: 1px solid #e9232c;
+    cursor: pointer;
+    margin-top: 12px;
+
+}
+
+#microProduct .product-bar .microActual,
+#microProduct .product-bar1 .microActual,
+#microProduct .product-bar2 .microActual,
+#microProduct .product-bar3 .microActual,
+#microProduct .product-bar4 .microActual {
+    display: inline-block;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    color: #399;
+    border: 1px solid #399;
+    cursor: pointer;
+}
+
+/* E - 产品中心 ----- */
+
+/* S - 新闻信息 ----- */
+
+#microNews {
+    padding: 50px 0;
+}
+
+#microNews .news1 {
+    padding: 150px;
+    font-size: 20px;
+    border-bottom: 1px dashed #c0c0c0;
+    text-align: center;
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+
+#microNews .news1::after {
+    content: ' ';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+}
+
+#microNews .news2 a {
+    width: 60px;
+    height: 60px;
+    border-bottom: none;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 24px;
+    background-color: #f5f5f5;
+}
+
+#microNews .news2 li {
+    float: left;
+}
+
+@media (min-width: 970px) {
+    #microNews .news2 li {
+        float: none;
+    }
+
+}
+
+#microNews .news2 .active a {
+    background-color: #e9232c;
+}
+
+#microNews .news2 a:hover,
+#microNews .news3 a:hover,
+#microNews .news4 a:hover,
+#microNews .news5 a:hover {
+    background-color: #e9232c;
+}
+
+#microNews .uniE90E::before,
+#microNews .uniE90F::before,
+#microNews .uniE910::before,
+#microNews .uniE911::before {
+    font-size: 28px;
+    color: #EAEAEA;
+}
+
+#microNews .uniE90E::before {
+    content: "\e90e";
+}
+
+#microNews .uniE90F::before {
+    content: "\e90f";
+}
+
+#microNews .uniE910::before {
+    content: "\e910";
+}
+
+#microNews .uniE911::before {
+    content: "\e911";
+}
+
+#microNews .line {
+    height: 273px;
+    border: 1px dashed #c0c0c0;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    z-index: -1;
+}
+
+#microNews .nav-tabs {
+    border-bottom: none;
+}
+
+#microNews .tab-content li {
+    list-style: none;
+    line-height: 46px;
+    font-size: 14px;
+}
+
+#microNews .tab-content ul {
+    padding: 0;
+}
+
+/* E - 新闻信息 ----- */
+
+/* S - 页脚信息 ----- */
+
+#footer {
+    border-top: 1px solid #999;
+    padding: 40px 0;
+}
+
+#footer h3 {
+    font-weight: 700;
+}
+
+#footer .partner-list {
+    font-size: 0;
+    padding: 0;
+}
+
+#footer .partner-list li {
+    display: inline-block;
+    list-style: none;
+    font-size: 55px;
+    width: calc(100% / 9);
+    height: 60px;
+}
+
+#footer .partner-list li a {
+    color: #999;
+}
+
+#footer .partner-list li + li {
+    border-left: 1px dashed #999;
+}
+
+#footer .partner-list li a:hover {
+    text-decoration: none;
+}
+
+#footer .icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+#footer .icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+#footer .icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+#footer .icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+#footer .icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+#footer .icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+#footer .icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+#footer .icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+#footer .icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
